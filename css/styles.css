@@ -1,0 +1,161 @@
+/*Import font family from Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+/*Reset styles*/
+
+* {
+    font-family: 'Roboto';
+    /*Declarate font family for this website*/
+    margin: 0;
+    /*Reset margin*/
+    padding: 0;
+    /*Reset padding*/
+    font-size: 62.5%;
+    /*1rem = 10px 2rem = 20px...*/
+    color: rgb(250, 235, 215);
+}
+
+/*General styles*/
+
+html {
+    background-color: rgb(250, 235, 215);
+}
+
+#main {
+    box-sizing: content-box;
+    margin: 5em;
+    padding: 2em 5em;
+    border-radius: 2.5rem;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(54, 53, 53, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 0px 15px 2px rgba(0,0,0,0.7);
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+figcaption {
+    font-size: 1.6rem;
+}
+
+li, strong, blockquote, cite, p, a{
+    font-size: 1.8rem;
+}
+
+/*Header Styles*/
+
+#header {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 900;
+}
+
+/*Image Content Styles*/
+
+#img-container {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+#image {
+    display: block;
+    max-width: 60vw;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 2.5rem;
+}
+
+#img-caption {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+/*Tribute Info Styles*/
+
+#tribute-info {
+    margin: 1rem auto;
+    max-width: 100rem;
+}
+
+#tribute-info>h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+#timeline {
+    line-height: 1.5;
+    padding-left: 2rem;
+}
+
+#timeline>li {
+    margin: 1rem auto;
+}
+
+#cite {
+    text-align: justify;
+    font-style: italic;
+    margin: 5rem auto;
+    width: 90%;
+}
+
+/*Footer Styles*/
+
+#footer {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/*Media Queries*/
+
+@media (max-width: 540px) and (min-width: 280px) {
+    /*Media Queries for mobile phones*/
+    #main {
+        margin: 1.2rem;
+        padding: 0 5rem;
+    }
+    #image {
+        max-width: 100%;
+    }
+    #img-caption {
+        font-size: 1.2rem;
+    }
+
+    #cite {
+        font-size: 1.4rem;
+        margin: 5rem auto 2.5rem auto;
+    }
+
+    li, strong, blockquote, cite, p, a{
+        font-size: 1.4rem;
+    }
+
+    #footer{
+        margin-bottom: 2rem;
+    }
+   
+}
+
+@media (max-width: 1280px) and (min-width: 768px) {
+    /*Media Queries for tablets*/
+    #main {
+        margin: 1.2rem;
+        padding: 0 10rem;
+    }
+
+    #image {
+        max-width: 100%;
+    }
+
+    #footer{
+        margin-bottom: 4rem;
+    }
+}
